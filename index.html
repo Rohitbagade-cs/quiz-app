@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Master</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="brain-icon">
+          <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+          <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+        </svg>
+      </div>
+      <h1>Quiz Master</h1>
+      <p>Test your knowledge across various topics</p>
+    </header>
+
+    <main>
+      <div id="categories" class="categories">
+        <!-- Categories will be inserted here -->
+      </div>
+
+      <div id="quiz-container" class="quiz-container hidden">
+        <div class="quiz-header">
+          <h1 id="category-name"></h1>
+          <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+          </div>
+        </div>
+        
+        <div class="question-container">
+          <h2 id="question"></h2>
+          <div id="options" class="options">
+            <!-- Options will be inserted here -->
+          </div>
+        </div>
+      </div>
+
+      <div id="result-screen" class="result-screen hidden">
+        <div class="trophy">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5h.217a5 5 0 0 1 4.783-3.5h5a5 5 0 0 1 4.783 3.5h.217a2.5 2.5 0 0 1 0 5H18"/>
+            <path d="M6 9v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9"/>
+            <path d="M12 12h.01"/>
+            <path d="M12 16h.01"/>
+          </svg>
+        </div>
+        <h2>Quiz Completed!</h2>
+        <p id="score-text"></p>
+        <div class="score-bar">
+          <div id="score-progress"></div>
+        </div>
+        <button id="restart-btn" class="btn">Try Again</button>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
